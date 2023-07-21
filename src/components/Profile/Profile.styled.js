@@ -9,6 +9,7 @@ export const ProfileStyle = styled.div`
   height: 300px;
   margin-left: 5px;
   margin-top: 10px;
+  background-color: ghostwhite;
 `;
 
 export const Image = styled.img`
