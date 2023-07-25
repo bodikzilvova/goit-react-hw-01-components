@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Profile } from 'components/Profile/Profile';
 import { Statistics } from 'components/Statistics/Statistics';
+import { FriendListItem } from 'components/FriendList/FriendList';
 import './index.css';
 import user from './components/Profile/user.json';
 import data from './components/Statistics/data.json'
 import PropTypes from 'prop-types';
+import friends from './components/FriendList/friends.json'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -17,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       stats={user.stats}
     />
     <Statistics title="Upload stats" stats={data} />
+    <FriendListItem friends = {friends} />
   </React.StrictMode>
 );
 
