@@ -13,7 +13,11 @@ export const ListDownloads = ({ data }) => (
 );
 
 ListDownloads.propTypes = {
-  stats: PropTypes.arrayOf(PropTypes.object).isRequired,
+  stats: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    label:PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  })
 }
 
 function getRandomHexColor() {
