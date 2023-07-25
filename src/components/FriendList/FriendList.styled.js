@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const FriendList = styled.ul`
+export const FriendListUl = styled.ul`
   border: 3px solid black;
   margin-left: 5px;
   margin-top: 10px;
@@ -8,7 +8,7 @@ export const FriendList = styled.ul`
   width: 300px;
 `;
 
-export const List = styled.li`
+export const FriendListItem = styled.li`
   background-color: azure;
   display: flex;
   justify-content: center;

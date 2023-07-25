@@ -6,6 +6,7 @@ import {
   Location,
   Stats,
 } from './Profile.styled';
+import PropTypes from 'prop-types';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => (
   <ProfileStyle>
@@ -31,3 +32,16 @@ export const Profile = ({ username, tag, location, avatar, stats }) => (
     </Stats>
   </ProfileStyle>
 );
+
+
+Profile.propTypes = {
+  username: PropTypes.string,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }).isRequired,
+};

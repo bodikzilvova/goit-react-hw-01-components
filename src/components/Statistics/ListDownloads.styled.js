@@ -10,7 +10,7 @@ export const UlDownloads = styled.ul`
   padding: 10px;
 `;
 
-export const List = styled.li`
+export const Item = styled.li`
   color: white;
   margin-left: 5px;
   &:first-of-type {margin-left: 0px;}
