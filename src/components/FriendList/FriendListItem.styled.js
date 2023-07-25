@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 
-export const FriendListItem = styled.li`
+export const FriendListItemStyle = styled.li`
   background-color: azure;
   display: flex;
   justify-content: center;
