@@ -10,8 +10,17 @@ import data from './components/Statistics/data.json'
 import friends from './components/FriendList/friends.json'
 import transacrions from './components/TransactionHistory/transactions.json'
 
+
+const containerStyles = {
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+};
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <div style={containerStyles}>
        <Profile
       username={user.username}
       tag={user.tag}
@@ -22,5 +31,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Statistics title="Upload stats" stats={data} />
     <FriendList friends = {friends} />
     <TransactionHistory items = {transacrions} />
+    </div>
   </React.StrictMode>
 );
