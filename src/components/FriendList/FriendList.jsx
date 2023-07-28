@@ -3,12 +3,16 @@ import { FriendListItem } from './FriendListItem';
 import PropTypes from 'prop-types';
 
 export const FriendList = ({ friends }) => (
-  <FriendListUl className="friend-list">{
-    friends.map(friend => (
-    <FriendListItem key={friend.id} isOnline={friend.isOnline} avatar={friend.avatar} name={friend.name} className="item">
-    </FriendListItem>)
-  )
-  }
+  <FriendListUl className="friend-list">
+    {friends.map(friend => (
+      <FriendListItem
+        key={friend.id}
+        isOnline={friend.isOnline}
+        avatar={friend.avatar}
+        name={friend.name}
+        className="item"
+      />
+    ))}
   </FriendListUl>
 );
 
