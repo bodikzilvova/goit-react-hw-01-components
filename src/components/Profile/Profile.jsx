@@ -33,7 +33,6 @@ export const Profile = ({ username, tag, location, avatar, stats }) => (
   </ProfileStyle>
 );
 
-
 Profile.propTypes = {
   username: PropTypes.string,
   tag: PropTypes.string.isRequired,

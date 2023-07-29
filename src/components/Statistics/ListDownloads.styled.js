@@ -13,5 +13,7 @@ export const UlDownloads = styled.ul`
 export const Item = styled.li`
   color: white;
   margin-left: 5px;
-  &:first-of-type {margin-left: 0px;}
+  &:first-of-type {
+    margin-left: 0px;
+  }
 `;

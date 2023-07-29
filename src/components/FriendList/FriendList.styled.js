@@ -7,5 +7,3 @@ export const FriendListUl = styled.ul`
   background-color: inherit;
   width: 300px;
 `;
-
-

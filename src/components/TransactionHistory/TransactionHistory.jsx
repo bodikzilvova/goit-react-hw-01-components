@@ -32,4 +32,3 @@ TransactionHistory.propTypes = {
     })
   ).isRequired,
 };
-

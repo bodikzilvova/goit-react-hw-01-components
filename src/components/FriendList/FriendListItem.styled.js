@@ -1,6 +1,5 @@
 import styled from '@emotion/styled';
 
-
 export const FriendListItemStyle = styled.li`
   background-color: azure;
   display: flex;

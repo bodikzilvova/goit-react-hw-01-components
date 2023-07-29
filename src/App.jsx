@@ -18,20 +18,18 @@ const containerStyles = {
 };
 
 export default function App() {
-  ReactDOM.createRoot(document.getElementById('root')).render(
-    <React.StrictMode>
-      <div style={containerStyles}>
-        <Profile
-          username={user.username}
-          tag={user.tag}
-          location={user.location}
-          avatar={user.avatar}
-          stats={user.stats}
-        />
-        <Statistics title="Upload stats" stats={data} />
-        <FriendList friends={friends} />
-        <TransactionHistory items={transacrions} />
-      </div>
-    </React.StrictMode>
+  return (
+    <div style={containerStyles}>
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+      <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transacrions} />
+    </div>
   );
 }
